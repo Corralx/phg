@@ -21,7 +21,7 @@ def main():
 #define {0}_PLATFORM_LINUX   0
 #define {0}_PLATFORM_ANDROID 0
 #define {0}_PLATFORM_WINDOWS 0
-#define {0}_PLATFORM_IPHONE  0
+#define {0}_PLATFORM_IOS     0
 #define {0}_PLATFORM_MACOS   0
 
 #if defined(__linux__)
