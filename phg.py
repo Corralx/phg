@@ -134,6 +134,7 @@ def main():
 #endif
 
 #define {0}_ASSERT(cond) assert(cond)
+#define {0}_ASSERT_MSG(cond, msg) assert(cond && msg)
 
 /* String Concatenation */
 #define {0}_CONCAT(x,y) {0}_CONCAT_AUX(x,y)
