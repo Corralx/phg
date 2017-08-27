@@ -96,8 +96,10 @@ def main():
 
 #if {0}_COMPILER_MSVC
 #define {0}_INTERFACE __declspec(dllexport)
+#define {0}_INLINE __forceinline
 #elif {0}_COMPILER_GCC || {0}_COMPILER_CLANG
 #define {0}_INTERFACE __attribute__ ((visibility ("default")))
+#define {0}_INLINE __attribute__((always_inline))
 #else
 #error "Unsupported compiler!"
 #endif
