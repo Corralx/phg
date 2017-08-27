@@ -102,6 +102,8 @@ def main():
 #error "Unsupported compiler!"
 #endif
 
+#include <cassert>
+
 #define {0}_ASSERT(cond) assert(cond)
 #define {0}_ASSERT_MSG(cond, msg) assert(cond && msg)
 
